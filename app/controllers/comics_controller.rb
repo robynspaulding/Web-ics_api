@@ -12,4 +12,9 @@ class ComicsController < ApplicationController
     )
     render json: @comic.as_json
   end
+
+  def show
+    @comic = Comic.find_by(id: params[:id])
+    render json: @comic.as_json
+  end
 end

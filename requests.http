@@ -11,4 +11,6 @@ Content-Type: application/json
 }
 
 
-###
+### Comics Show
+GET http://localhost:3000/comics/1.json
+

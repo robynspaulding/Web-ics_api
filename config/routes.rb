@@ -6,4 +6,5 @@ Rails.application.routes.draw do
 
   get "/comics" => "comics#index" 
   post "/comics" => "comics#create"
+  get "/comics/:id" => "comics#show"
 end
