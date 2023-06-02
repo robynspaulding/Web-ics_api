@@ -14,3 +14,15 @@ Content-Type: application/json
 ### Comics Show
 GET http://localhost:3000/comics/1.json
 
+
+### Comics Update
+PATCH http://localhost:3000/comics/4.json
+Content-Type: application/json
+
+{
+  "title": "updated updated",
+  "image": "update.png"
+}
+
+
+### Comics Destroy
