@@ -26,3 +26,4 @@ Content-Type: application/json
 
 
 ### Comics Destroy
+DELETE http://localhost:3000/comics/5.json

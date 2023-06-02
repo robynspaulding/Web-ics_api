@@ -25,4 +25,10 @@ class ComicsController < ApplicationController
     comic.save
     render json: comic.as_json
   end
+
+  def destroy
+    comic = Comic.find_by(id: params[:id])
+    comic.delete
+    render json: { message: "Comic successfullt deleted" }
+  end
 end
