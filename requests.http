@@ -1,0 +1,14 @@
+### Comics Index
+GET http://localhost:3000/comics.json
+
+### Comics Create
+POST http://localhost:3000/comics.json
+Content-Type: application/json
+
+{
+  "title": "Test create action",
+  "image": "test.png"
+}
+
+
+###
