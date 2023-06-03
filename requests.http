@@ -1,3 +1,16 @@
+### Users create
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Test Name",
+  "email": "test@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+
+
 ### Comics Index
 GET http://localhost:3000/comics.json
 
