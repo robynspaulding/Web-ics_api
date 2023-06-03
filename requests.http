@@ -52,3 +52,39 @@ Content-Type: application/json
 ### Comics Destroy
 DELETE http://localhost:3000/comics/7.json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODU4NDkxNjR9.EyBQJhYmF3C_T6CLKGsp4aW9tMc_9_UPTlHeVB0ORV8
+
+
+### comments Index
+GET http://localhost:3000/comments.json
+
+### comments Create
+POST http://localhost:3000/comments.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODU4NDkxNjR9.EyBQJhYmF3C_T6CLKGsp4aW9tMc_9_UPTlHeVB0ORV8
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "comic_id": 2,
+  "comment": "This is nuts!!"
+}
+
+
+### comments Show
+GET http://localhost:3000/comments/1.json
+
+
+### comments Update
+PATCH http://localhost:3000/comments/4.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODU4NDkxNjR9.EyBQJhYmF3C_T6CLKGsp4aW9tMc_9_UPTlHeVB0ORV8
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "comic_id": 2,
+  "comment": "This is bananas!!"
+}
+
+
+### comments Destroy
+DELETE http://localhost:3000/comments/4.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODU4NDkxNjR9.EyBQJhYmF3C_T6CLKGsp4aW9tMc_9_UPTlHeVB0ORV8
