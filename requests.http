@@ -25,10 +25,11 @@ GET http://localhost:3000/comics.json
 
 ### Comics Create
 POST http://localhost:3000/comics.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODU4NDkxNjR9.EyBQJhYmF3C_T6CLKGsp4aW9tMc_9_UPTlHeVB0ORV8
 Content-Type: application/json
 
 {
-  "title": "Test create action",
+  "title": "Test create action with authroication/logged in",
   "image": "test.png"
 }
 
@@ -38,14 +39,16 @@ GET http://localhost:3000/comics/1.json
 
 
 ### Comics Update
-PATCH http://localhost:3000/comics/1.json
+PATCH http://localhost:3000/comics/2.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODU4NDkxNjR9.EyBQJhYmF3C_T6CLKGsp4aW9tMc_9_UPTlHeVB0ORV8
 Content-Type: application/json
 
 {
-  "title": "Sandman vs Sandwitch",
-  "image": "SS.png"
+  "title": "I love stars sooo much!!!!!",
+  "image": "test.png"
 }
 
 
 ### Comics Destroy
-DELETE http://localhost:3000/comics/5.json
+DELETE http://localhost:3000/comics/7.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODU4NDkxNjR9.EyBQJhYmF3C_T6CLKGsp4aW9tMc_9_UPTlHeVB0ORV8
