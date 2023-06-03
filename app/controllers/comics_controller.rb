@@ -1,5 +1,6 @@
 class ComicsController < ApplicationController
-
+  before_action :authenticate_user, except: [:index, :show]
+  
   def index
     comics = Comic.all
     render json: comics.as_json
